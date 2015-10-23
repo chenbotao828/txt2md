@@ -1,0 +1,1445 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is_tabl",
+				"is_table_remarks"
+			],
+			[
+				"alisl",
+				"align_con_span_lst〔variable〕"
+			],
+			[
+				"als",
+				"align_con_lst_to_span"
+			],
+			[
+				"len",
+				"len"
+			],
+			[
+				"alin",
+				"align_con_lst"
+			],
+			[
+				"ali",
+				"align_con_lst"
+			],
+			[
+				"w",
+				"while	While Loop"
+			],
+			[
+				"al",
+				"align_con_lst"
+			],
+			[
+				"pr",
+				"print〔function〕"
+			],
+			[
+				"align",
+				"align_line"
+			],
+			[
+				"e",
+				"end"
+			],
+			[
+				"con_j",
+				"con_judge〔function〕"
+			],
+			[
+				"mer",
+				"merge_con_lst"
+			],
+			[
+				"stat",
+				"start"
+			],
+			[
+				"f",
+				"for"
+			],
+			[
+				"is_ta",
+				"is_table_name"
+			],
+			[
+				"sta",
+				"start_i"
+			],
+			[
+				"ista",
+				"is_table_grid"
+			],
+			[
+				"tex",
+				"text_lst,i	(txt2md.py)"
+			],
+			[
+				"new",
+				"newlst"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"con",
+				"con_func"
+			],
+			[
+				"issub",
+				"is_subtittle"
+			],
+			[
+				"utf",
+				"utf16"
+			],
+			[
+				"exi",
+				"exit	(codecs.py)"
+			],
+			[
+				"he",
+				"help〔variable〕"
+			],
+			[
+				"ra",
+				"range"
+			],
+			[
+				"me",
+				"merge_line	(txt2md.py)"
+			],
+			[
+				"repl",
+				"replace_word_lst	(txt2md.py)"
+			],
+			[
+				"rere",
+				"rereobj"
+			],
+			[
+				"repla",
+				"replace_word_lst〔variable〕"
+			],
+			[
+				"replace",
+				"replace_words_in_text"
+			],
+			[
+				"d",
+				"def"
+			],
+			[
+				"wor",
+				"word〔variable〕"
+			],
+			[
+				"wo",
+				"word"
+			],
+			[
+				"replac",
+				"replace_words_in_text"
+			],
+			[
+				"te",
+				"text_lst〔argument〕"
+			],
+			[
+				"Tr",
+				"True"
+			],
+			[
+				"prin",
+				"print〔function〕"
+			],
+			[
+				"pri",
+				"print〔function〕"
+			],
+			[
+				"pag",
+				"page_amount〔variable〕"
+			],
+			[
+				"ne",
+				"newlst〔variable〕"
+			],
+			[
+				"le",
+				"letter"
+			],
+			[
+				"thi",
+				"things_lst"
+			],
+			[
+				"read",
+				"readlines	(txt2md.py)"
+			],
+			[
+				"co",
+				"cons"
+			],
+			[
+				"num",
+				"numbers"
+			],
+			[
+				"app",
+				"apply	(常用函数.lsp.dump)"
+			],
+			[
+				"sr",
+				"struct"
+			],
+			[
+				"dat",
+				"data-lst"
+			],
+			[
+				"data",
+				"data-name-lst"
+			],
+			[
+				"st",
+				"struct"
+			],
+			[
+				"def",
+				"defun"
+			],
+			[
+				"gl",
+				"global"
+			],
+			[
+				"mys",
+				"myswap〔function〕"
+			],
+			[
+				"range",
+				"range〔class〕"
+			],
+			[
+				"ol",
+				"ol〔variable〕"
+			],
+			[
+				"sl",
+				"sl〔variable〕"
+			],
+			[
+				"coun",
+				"count〔function〕"
+			],
+			[
+				"s",
+				"sort"
+			],
+			[
+				"imp",
+				"impSwap〔function〕"
+			],
+			[
+				"impSwa",
+				"impSwap"
+			],
+			[
+				"lst",
+				"lst〔argument〕"
+			],
+			[
+				"fist",
+				"fist〔function〕"
+			],
+			[
+				"las",
+				"last〔function〕"
+			],
+			[
+				"onl",
+				"only〔function〕"
+			],
+			[
+				"on",
+				"only〔function〕"
+			],
+			[
+				"swap",
+				"swap〔function〕"
+			],
+			[
+				"swa",
+				"swap〔function〕"
+			],
+			[
+				"fo",
+				"for〔keyword〕"
+			],
+			[
+				"tw",
+				"twoSum〔function〕"
+			],
+			[
+				"ta",
+				"target"
+			],
+			[
+				"sa",
+				"say〔function〕"
+			],
+			[
+				"el",
+				"elif〔keyword〕"
+			],
+			[
+				"re",
+				"reverse〔function〕"
+			],
+			[
+				"print",
+				"print〔function〕"
+			],
+			[
+				"out",
+				"out〔variable〕"
+			],
+			[
+				"2",
+				"2,3,1,1,4"
+			],
+			[
+				"find",
+				"findEnd〔function〕"
+			],
+			[
+				"i",
+				"if	If Condition"
+			],
+			[
+				"jump",
+				"jump〔function〕"
+			],
+			[
+				"T",
+				"True"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"locInr",
+				"locInReach〔function〕"
+			],
+			[
+				"n",
+				"num"
+			],
+			[
+				"r",
+				"roman"
+			],
+			[
+				"bas",
+				"basicRomantoNum"
+			],
+			[
+				"basrn",
+				"basicRomantoNum〔function〕"
+			],
+			[
+				"basic",
+				"basicRomanCompare〔function〕"
+			],
+			[
+				"ba",
+				"basicRomantoNum〔function〕"
+			],
+			[
+				"ro",
+				"romam〔variable〕"
+			],
+			[
+				"de",
+				"defun"
+			],
+			[
+				"com",
+				"command	(常用函数.lsp.dump)"
+			],
+			[
+				"sto",
+				"sToNNegative"
+			],
+			[
+				"half",
+				"halfRatio"
+			],
+			[
+				"sum",
+				"sumHalfArea"
+			],
+			[
+				"entse",
+				"entsel"
+			],
+			[
+				"ori",
+				"originStr"
+			],
+			[
+				"strca",
+				"strcat	(常用函数.lsp.dump)"
+			],
+			[
+				"fis",
+				"first	(常用函数.lsp.dump)"
+			],
+			[
+				"subs",
+				"substr	(常用函数.lsp.dump)"
+			],
+			[
+				"pro",
+				"progn	(plmj .lsp)"
+			],
+			[
+				"info",
+				"infoIndexList"
+			],
+			[
+				"ent",
+				"ent某个框"
+			],
+			[
+				"多边",
+				"ent-多边形"
+			],
+			[
+				"pl",
+				"PT-LST"
+			],
+			[
+				"计数",
+				"计数2"
+			],
+			[
+				"ent-",
+				"ent-面积框"
+			],
+			[
+				"se",
+				"setq"
+			],
+			[
+				"ss-",
+				"ss-面积框"
+			],
+			[
+				"ss",
+				"ssget"
+			],
+			[
+				"var",
+				"var〔keyword〕"
+			],
+			[
+				"sc",
+				"script	<script>"
+			],
+			[
+				"h",
+				"h	<h1> - <h6>"
+			],
+			[
+				"doc",
+				"document〔variable〕"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"htm",
+				"html5	Simple HTML5 Boilerplate"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"c",
+				"colspan	Attr"
+			],
+			[
+				"area",
+				"area	<area>"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"htt",
+				"http://baidu"
+			],
+			[
+				"wid",
+				"width	Attr"
+			],
+			[
+				"im",
+				"img	img"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"add",
+				"address	<address>"
+			],
+			[
+				"kbd",
+				"kbd	Tag"
+			],
+			[
+				"ma",
+				"mark	<mark>"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ea466229632646a39a4b8cf545896864/md文档范例.txt",
+			"settings":
+			{
+				"buffer_size": 1419,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"browser",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"brow",
+				"View In Browser"
+			],
+			[
+				"brows",
+				"View In Browser"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"PREV",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"pyt",
+				"SublimeREPL: Python"
+			],
+			[
+				"pyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"python",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"pytho",
+				"SublimeREPL: Python"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mad",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"m",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ssm",
+				"Set Syntax: Markdown"
+			],
+			[
+				"pyr",
+				"SublimeREPL: Python - virtualenv"
+			],
+			[
+				"pyht",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"pyh",
+				"SublimeREPL: Python"
+			],
+			[
+				"Python",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"pth",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"ipyt",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"ssl",
+				"Set Syntax: Lisp"
+			],
+			[
+				"ssr",
+				"Set Syntax: Racket"
+			],
+			[
+				"de",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"del",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"del em",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"ssc",
+				"Set Syntax: C"
+			],
+			[
+				"ru",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"curent",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"rep",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"ssll",
+				"Set Syntax: LaTeX Log"
+			],
+			[
+				"sssch",
+				"Set Syntax: Scheme"
+			],
+			[
+				"SSL",
+				"Set Syntax: Lisp"
+			],
+			[
+				"ssy",
+				"Set Syntax: YAML"
+			],
+			[
+				"vie",
+				"View In Browser"
+			],
+			[
+				"browse",
+				"View In Browser"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"auto",
+				"Snippet: link - author"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"html ",
+				"Snippet: DOCTYPE HTML"
+			],
+			[
+				"emmet h",
+				"Snippet: IE Conditional Comment: HTML5 Shim"
+			],
+			[
+				"ra",
+				"SublimeREPL: Racket"
+			],
+			[
+				"rac",
+				"SublimeREPL: Racket"
+			],
+			[
+				"sss",
+				"Set Syntax: Scheme"
+			],
+			[
+				"isnta",
+				"BracketHighlighter: Select Next Attribute (left)"
+			],
+			[
+				"ssli",
+				"Set Syntax: Lisp"
+			],
+			[
+				"sslis",
+				"Set Syntax: Lisp"
+			],
+			[
+				"lisp",
+				"Set Syntax: Lisp"
+			],
+			[
+				"lsp",
+				"Set Syntax: Lisp"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"v",
+				"View In Browser"
+			],
+			[
+				"sn script",
+				"Snippet: <script>"
+			],
+			[
+				"scrip",
+				"Snippet: <script>"
+			],
+			[
+				"script",
+				"Snippet: Google AJAX Libraries: Scriptaculous"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"vi",
+				"View In Browser"
+			],
+			[
+				"view in",
+				"File: New View into File"
+			],
+			[
+				"snip",
+				"Snippet: <fieldset>"
+			],
+			[
+				"html5",
+				"Snippet: IE Conditional Comment: HTML5 Shim"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss vb",
+				"Set Syntax: VBScript"
+			],
+			[
+				"ss li",
+				"Set Syntax: Lisp"
+			],
+			[
+				"bra",
+				"BracketHighlighter: Swap Brackets"
+			],
+			[
+				"bas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"ss l",
+				"Set Syntax: Lisp"
+			],
+			[
+				"ipy",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"sy py",
+				"Set Syntax: Python3"
+			],
+			[
+				"sy sch",
+				"Set Syntax: Scheme"
+			],
+			[
+				"trim",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"tr",
+				"Trimmer: Trim leading whitespace."
+			],
+			[
+				"sy sc",
+				"Set Syntax: Scheme"
+			],
+			[
+				"sc",
+				"SublimeREPL: Scheme"
+			],
+			[
+				"Rac",
+				"Set Syntax: Racket"
+			],
+			[
+				"racket",
+				"SublimeREPL: Racket"
+			],
+			[
+				"sytax ra",
+				"Set Syntax: Racket"
+			],
+			[
+				"sy ",
+				"Set Syntax: Scheme"
+			],
+			[
+				"sy",
+				"Set Syntax: Scheme"
+			],
+			[
+				"build",
+				"Build: Run with WScript"
+			],
+			[
+				"vbs",
+				"Set Syntax: VBScript"
+			],
+			[
+				"py",
+				"Set Syntax: Python3"
+			],
+			[
+				"sche",
+				"Set Syntax: Scheme"
+			],
+			[
+				"sy scm",
+				"Set Syntax: Scheme"
+			],
+			[
+				"",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"sch",
+				"SublimeREPL: Scheme"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"run ",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"ri",
+				"SublimeREPL: Io"
+			],
+			[
+				"rn",
+				"SublimeREPL: Node"
+			],
+			[
+				"pythoi",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"shell",
+				"SublimeREPL: Shell"
+			],
+			[
+				"Subliem",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package c",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 143.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/web/txt2md_Project/计划.txt",
+		"/D/web/txt2md_Project/py/print.py",
+		"/D/web/txt2md_Project/py/ver01.py",
+		"/D/web/txt2md_Project/py/test.py",
+		"/D/web/txt2md_Project/py/txt2md_ver0.2.py",
+		"/E/code/Sublime Text 2/Data/Packages/View In Browser/Default (Windows).sublime-keymap",
+		"/E/Program Files/zzjz/critedeclarefolder/fggg11.xml",
+		"/D/web/txt2md_Project/py/<frozen importlib._bootstrap>",
+		"/D/web/txt2md_Project/py/txt2md_ver0.1.py",
+		"/E/code/Sublime Text 2/Data/Packages/User/Preferences.sublime-settings",
+		"/D/web/test1/source/te.TXT",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/a8489898e4444f6d9c6866d8cb985fda/mulu.TXT",
+		"/C/Users/Administrator/Desktop/csshi.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/79860b99cfcb4e69b9e8001608d78e62/txt2md.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ea466229632646a39a4b8cf545896864/md文档范例.txt",
+		"/C/Users/Administrator/Desktop/mulu.TXT",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/713752c7fc224cc6a56d169dde436087/te.TXT",
+		"/C/Users/Administrator/Desktop/te.TXT",
+		"/C/Users/Administrator/Desktop/md文档范例.txt",
+		"/C/Users/Administrator/Desktop/txt2md_ver01.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/0a84d342c0bc4d689b53a14252c31aae/txt2md.py",
+		"/E/Program Files/Minecraft Story Mode/开始游戏有问题请进.txt.dump",
+		"/E/Program Files/Minecraft Story Mode/开始游戏.exe.config",
+		"/C/Users/Administrator/Desktop/151015135408_0001.JPG.TXT.dump",
+		"/C/Users/Administrator/Desktop/151015135408_0001.JPG.TXT",
+		"/E/Program Files/Minecraft Story Mode/开始游戏有问题请进.txt",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/4de12eb66f9047658b4c211c9146426e/9.25计划大纲.txt",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/dff73ed4380b4270962c5362805bacba/txt2md.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/13978a4b00684aeb8e74509dfbf7802f/te.TXT",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/a72286e192fe4683b972eac834ecf467/txt2md.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/e302c0cbf3014aad941a11fce7f2f0a5/txt2md.py",
+		"/E/code/Python3.4.2/lib/codecs.py",
+		"/C/Users/Administrator/Desktop/#住宅设计规范 GB 50096-2011.mdown",
+		"/D/2014/HN清华园五期火车站/参考/火车道宽度.txt.dump",
+		"/D/2014/HN清华园五期火车站/参考/火车道宽度.txt",
+		"/E/code/Sublime Text 2/Data/Packages/Python/Python.sublime-build",
+		"/C/Users/Administrator/Desktop/txt2md.py",
+		"/D/web/test1/source/test3.txt",
+		"/D/web/文档制作设计/素材/test1.TXT",
+		"/D/web/test1/source/test1.TXT",
+		"/D/web/test1/source/test2.txt",
+		"/D/web/文档制作设计/素材/实验1.TXT",
+		"/E/code/Dev-Cpp/MinGW64/bin/lib/doctest.py",
+		"/E/code/Dev-Cpp/MinGW64/bin/lib/pydoc_data/topics.py",
+		"/C/Users/Administrator/Documents/My Hwdoc Files/HWPDFOCR80/OUTPUT/住宅设计规范 GB50096-2011.txt",
+		"/C/Users/Administrator/Desktop/11111.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/d40a35f8722a41dabedbc234fa8f0afa/演示目录.txt",
+		"/C/Users/Administrator/Downloads/jmc.lisp",
+		"/C/Users/Administrator/Documents/My Hwdoc Files/HWPDFOCR80/OUTPUT/1123.TXT",
+		"/C/Users/Administrator/AppData/Local/Temp/1BE9.tmp.txt",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ecb68ed3c5094636be4182493ef38511/求多段线最短距离.lisp",
+		"/C/Users/Administrator/Desktop/常用函数.lisp",
+		"/C/Users/Administrator/Downloads/不死猫 Lisp 飞机.lsp.dump",
+		"/C/Users/Administrator/Downloads/face.lsp.dump",
+		"/C/Users/Administrator/Downloads/不死猫 Lisp 飞机.lsp",
+		"/C/Users/Administrator/Downloads/face.lsp",
+		"/D/表格工具/plmj .lsp",
+		"/C/Users/Administrator/Documents/Tencent Files/85280861/FileRecv/统计多条线长度.lsp.dump",
+		"/C/Users/Administrator/Desktop/增强计算面积.lisp.dump",
+		"/C/Users/Administrator/Desktop/xuqian.lsp.dump",
+		"/C/Users/Administrator/Desktop/xuqian.lsp",
+		"/C/Users/Administrator/Desktop/增强计算面积.lisp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/23e50d70affe46558251832f65c7a838/面积计算最终版.lisp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/659f573e1f2c425985c67cc3a3fd7c48/apartmentareacal.lsp",
+		"/C/Users/Administrator/Documents/Tencent Files/85280861/FileRecv/统计多条线长度.lsp",
+		"/C/Users/Administrator/Documents/Tencent Files/85280861/FileRecv/命令.txt",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/14fb713c7ac14a4da49b28aefdf6d01d/常用函数.lsp.dump",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/df1b975b912e4ade9c67438dc97b7991/常用函数.lsp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/14fb713c7ac14a4da49b28aefdf6d01d/常用函数.lsp",
+		"/C/Users/Administrator/Desktop/gpqqk/说明.txt.dump",
+		"/C/Users/Administrator/Desktop/gpqqk/Readme.txt.dump",
+		"/C/Users/Administrator/Desktop/gpqqk/Readme.txt",
+		"/C/Users/Administrator/Desktop/gpqqk/说明.txt",
+		"/E/code/PRA/AutoLisp/函数库2/视图集合.lsp.dump",
+		"/E/code/PRA/AutoLisp/函数库2/进程显示.lsp.dump",
+		"/E/code/PRA/AutoLisp/函数库2/进程显示.lsp",
+		"/E/code/PRA/AutoLisp/函数库2/视图集合.lsp",
+		"/E/Program Files/【1.7.2】Curtainf2f/说明.txt.dump",
+		"/E/Program Files/【1.7.2】Curtainf2f/说明.txt",
+		"/C/Users/Administrator/Documents/My Hwdoc Files/HWPDFOCR80/OUTPUT/文本1.TXT",
+		"/D/2015/HN郑州奥马/8.27/01.TXT",
+		"/C/Users/Administrator/Documents/My Hwdoc Files/HWPDFOCR80/OUTPUT/11111.TXT",
+		"/E/VS2013/Common7/IDE/Extensions/Microsoft/Python Tools for Visual Studio/2.1/ptvsd/visualstudio_py_util.py",
+		"/D/2014/HN清华园忆江南十五区/11.12加轴号/加轴线/进度.txt.dump",
+		"/D/2014/HN清华园忆江南十五区/11.12加轴号/加轴线/进度.txt",
+		"/E/temp/Rar$DIa0.615/目录.txt.dump",
+		"/E/temp/Rar$DIa0.615/目录.txt",
+		"/E/Program Files/Tarch14/sys18x64/acad.pgp.dump",
+		"/E/Program Files/Tarch14/sys18x64/acad.pgp",
+		"/C/Users/Administrator/Desktop/shiyan.csv.dump",
+		"/C/Users/Administrator/Desktop/shiyan.csv",
+		"/D/表格工具/DE.lsp.dump",
+		"/D/表格工具/DE.lsp",
+		"/E/temp/Rar$DIa0.466/使用说明.txt.dump",
+		"/E/temp/Rar$DIa0.466/使用说明.txt",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/3186372c44a74be3a1b5eedc4fbddc37/求多段线最短距离.lisp",
+		"/E/AutoCAD_2012_Simplified_Chinese_Win_64bit/x64/acad/Program Files/Root/Express/extrim.lsp",
+		"/D/表格工具/ungroup.lsp.dump",
+		"/D/表格工具/plbz.lsp.dump",
+		"/D/表格工具/DX.lsp.dump",
+		"/D/表格工具/ungroup.lsp",
+		"/D/表格工具/plbz.lsp",
+		"/D/表格工具/DX.lsp",
+		"/E/AutoCAD_2012_Simplified_Chinese_Win_64bit/x64/acad/Program Files/Root/Express/txtexp.lsp",
+		"/E/cad 相关/16/AutoCAD_2016_Simplified_Chinese_Win_64bit_dlm/x64/acad/Program Files/Root/Express/extrim.lsp",
+		"/E/temp/Rar$DIa0.287/说明.txt",
+		"/D/表格工具/面积计算最终版.lsp.dump",
+		"/D/表格工具/面积计算最终版.lsp",
+		"/E/code/FS150715/Snippet/使用说明.txt.dump",
+		"/E/code/FS150715/Snippet/cond~1.lsp.dump",
+		"/E/code/FS150715/Snippet/if~2.lsp.dump",
+		"/E/code/FS150715/Snippet/if~1.lsp.dump",
+		"/E/code/FS150715/Snippet/使用说明.txt",
+		"/E/code/FS150715/Snippet/cond~1.lsp",
+		"/E/code/FS150715/Snippet/if~2.lsp",
+		"/E/code/FS150715/Snippet/if~1.lsp",
+		"/C/Users/Administrator/Documents/Tencent Files/85280861/FileRecv/Visual C#2010从入门到精通视频教程下载地址.txt.dump",
+		"/C/Users/Administrator/Documents/Tencent Files/85280861/FileRecv/Visual C#2010从入门到精通视频教程下载地址.txt",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/449440F1A31B44C0A40DCDC880152FCE/面积计算最终版.lisp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/449440f1a31b44c0a40dcdc880152fce/面积计算最终版.lisp",
+		"/D/表格工具/QW局部隐藏,局部保留,REGEN恢复.lsp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/0fabc5d947e547b680c4a05b76d0b31c/plmj .lsp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/cebb4091dd4842e8959b3416d020b281/smj.lsp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/6e73b36f1ff34a0480e4436472442dd6/常用函数.lsp.dump",
+		"/D/AutoLisp/2015/Area-7.15/常用函数库-93.11.lsp.dump",
+		"/D/AutoLisp/2015/Area-7.15/常用函数库-93.11.lsp",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/6e73b36f1ff34a0480e4436472442dd6/常用函数.lsp",
+		"/C/Users/Administrator/Desktop/面积计算最终版.lisp"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"E:\\Program Files\\Tarch14\\sys18x64",
+			"E:\\temp",
+			"E:\\code\\Python2.7.9",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\",
+			"is",
+			"\\.",
+			"**",
+			">",
+			"is_remarks",
+			",\n",
+			"pic",
+			"piv",
+			"align_con_lst_to_span",
+			"align_lst",
+			"i",
+			"con_span",
+			"is_table",
+			"move_to_next_merge",
+			"*",
+			"\\W*",
+			"\\w",
+			"\\W",
+			"'\\d+\\w*[．….]*'",
+			"'(\\d+)(\\w*)([．….]*)'",
+			"\\w",
+			"\\W",
+			"\\w",
+			"\\W",
+			"\\w",
+			"\\W",
+			"del_con_lst",
+			"title",
+			"is_content_name",
+			"contend",
+			"/",
+			"…",
+			".",
+			"…",
+			".",
+			" ",
+			"line",
+			"string",
+			"is_tittle",
+			",",
+			"con_func_lst",
+			"index_match",
+			" ",
+			"    ",
+			"\\AppData\\Local\\YNote\\Data\\sina1697537093\\e302c0cbf3014aad941a11fce7f2f0a5",
+			"txt2md",
+			"\"C:\\Users\\Administrator\\AppData\\Local\\YNote\\Data\\sina1697537093\\e302c0cbf3014aad941a11fce7f2f0a5\\txt2md.py\"",
+			"\\",
+			"main",
+			" ",
+			"text_test_lst",
+			",anyway",
+			"return_true",
+			">>> contactInfo = 'Doe, John: 555-1212'",
+			"return_true",
+			"default",
+			"True",
+			"filter",
+			"->",
+			"del_page_in_text_lst",
+			"new_text_lst",
+			"text_lst",
+			"lst",
+			"line",
+			"\\u",
+			"\\",
+			"\"",
+			"“",
+			"”",
+			"。",
+			"->",
+			".",
+			".............................",
+			".",
+			"........",
+			"┫",
+			"┣",
+			"┃",
+			"'t",
+			"(vl-cmdf",
+			"delay",
+			"delay\\",
+			"delay",
+			"time",
+			"时间",
+			"delay",
+			"等",
+			"等待",
+			"延时",
+			"grread",
+			"tblsearch",
+			"square",
+			"最短边",
+			"最长边",
+			"边长列表",
+			"总长边",
+			"总短边",
+			"周长",
+			"总周长",
+			"面积",
+			"总亩数",
+			"总面积",
+			"print",
+			"square",
+			"cbt",
+			"多段线",
+			"长度",
+			"边",
+			"边长",
+			"长边",
+			"矩形",
+			"10000",
+			"列表",
+			"空列表",
+			"空",
+			"空表",
+			"struct",
+			"lst",
+			"a",
+			"inpt",
+			"s",
+			"only",
+			"in",
+			"first",
+			"fist",
+			"−",
+			"．"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ea466229632646a39a4b8cf545896864/md文档范例.txt",
+					"settings":
+					{
+						"buffer_size": 1419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1053,
+								1053
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1192.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 194.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"0.2",
+				"py/txt2md_ver0.2.py"
+			],
+			[
+				"",
+				"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/79860b99cfcb4e69b9e8001608d78e62/txt2md.py"
+			],
+			[
+				"ces",
+				"/C/Users/Administrator/Desktop/csshi.py"
+			],
+			[
+				"run",
+				"random/Untitled 1.py"
+			],
+			[
+				"4.11",
+				"C yunclass/Week4.11.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 354.0,
+	"status_bar_visible": true
+}

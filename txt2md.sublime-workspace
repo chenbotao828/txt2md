@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"tes",
+				"test_sample"
+			],
+			[
+				"rep",
+				"replace"
+			],
+			[
+				"mode",
+				"mod_text"
+			],
+			[
+				"ali",
+				"aline"
+			],
+			[
+				"add",
+				"add_cf_type,lst	(test.py)"
+			],
+			[
+				"raw",
+				"raw_text"
+			],
+			[
+				"cla",
+				"class	New Class"
+			],
+			[
+				"exc",
+				"exec〔function〕"
+			],
+			[
 				"is_tabl",
 				"is_table_remarks"
 			],
@@ -21,10 +53,6 @@
 			],
 			[
 				"alin",
-				"align_con_lst"
-			],
-			[
-				"ali",
 				"align_con_lst"
 			],
 			[
@@ -486,54 +514,26 @@
 			[
 				"hr",
 				"href"
-			],
-			[
-				"htt",
-				"http://baidu"
-			],
-			[
-				"wid",
-				"width	Attr"
-			],
-			[
-				"im",
-				"img	img"
-			],
-			[
-				"ti",
-				"title"
-			],
-			[
-				"add",
-				"address	<address>"
-			],
-			[
-				"kbd",
-				"kbd	Tag"
-			],
-			[
-				"ma",
-				"mark	<mark>"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ea466229632646a39a4b8cf545896864/md文档范例.txt",
-			"settings":
-			{
-				"buffer_size": 1419,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 334.0,
 		"selected_items":
 		[
+			[
+				"run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"pyt",
+				"SublimeREPL: Python"
+			],
 			[
 				"prev",
 				"Markdown Preview: Preview in Browser"
@@ -585,14 +585,6 @@
 			[
 				"previw",
 				"Markdown Preview: Preview in Browser"
-			],
-			[
-				"run",
-				"SublimeREPL: Python - RUN current file"
-			],
-			[
-				"pyt",
-				"SublimeREPL: Python"
 			],
 			[
 				"pyth",
@@ -984,6 +976,21 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Administrator/Documents/GitHub/txt2md/test.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/dfdc57cba9fd41cfa6bb3776b6e1df7f/txt2md_ver01.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ea466229632646a39a4b8cf545896864/md文档范例.txt",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/rt.py",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/config.py",
+		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/32cea099019847708bda0cb80f97b407/txt2md.py",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/<string>",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/计划.txt",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/正文.TXT",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/目次.TXT",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/前言.TXT",
+		"/E/code/Sublime Text 2/Data/Packages/Default/Preferences.sublime-settings",
+		"/E/code/Sublime Text 2/Data/Packages/Language - English/README_en_GB.txt",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/txt2md.sublime-workspace",
+		"/C/Users/Administrator/Documents/GitHub/txt2md/txt2md.sublime-project",
 		"/D/web/txt2md_Project/计划.txt",
 		"/D/web/txt2md_Project/py/print.py",
 		"/D/web/txt2md_Project/py/ver01.py",
@@ -998,7 +1005,6 @@
 		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/a8489898e4444f6d9c6866d8cb985fda/mulu.TXT",
 		"/C/Users/Administrator/Desktop/csshi.py",
 		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/79860b99cfcb4e69b9e8001608d78e62/txt2md.py",
-		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ea466229632646a39a4b8cf545896864/md文档范例.txt",
 		"/C/Users/Administrator/Desktop/mulu.TXT",
 		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/713752c7fc224cc6a56d169dde436087/te.TXT",
 		"/C/Users/Administrator/Desktop/te.TXT",
@@ -1097,21 +1103,7 @@
 		"/E/code/FS150715/Snippet/if~2.lsp.dump",
 		"/E/code/FS150715/Snippet/if~1.lsp.dump",
 		"/E/code/FS150715/Snippet/使用说明.txt",
-		"/E/code/FS150715/Snippet/cond~1.lsp",
-		"/E/code/FS150715/Snippet/if~2.lsp",
-		"/E/code/FS150715/Snippet/if~1.lsp",
-		"/C/Users/Administrator/Documents/Tencent Files/85280861/FileRecv/Visual C#2010从入门到精通视频教程下载地址.txt.dump",
-		"/C/Users/Administrator/Documents/Tencent Files/85280861/FileRecv/Visual C#2010从入门到精通视频教程下载地址.txt",
-		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/449440F1A31B44C0A40DCDC880152FCE/面积计算最终版.lisp",
-		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/449440f1a31b44c0a40dcdc880152fce/面积计算最终版.lisp",
-		"/D/表格工具/QW局部隐藏,局部保留,REGEN恢复.lsp",
-		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/0fabc5d947e547b680c4a05b76d0b31c/plmj .lsp",
-		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/cebb4091dd4842e8959b3416d020b281/smj.lsp",
-		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/6e73b36f1ff34a0480e4436472442dd6/常用函数.lsp.dump",
-		"/D/AutoLisp/2015/Area-7.15/常用函数库-93.11.lsp.dump",
-		"/D/AutoLisp/2015/Area-7.15/常用函数库-93.11.lsp",
-		"/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/6e73b36f1ff34a0480e4436472442dd6/常用函数.lsp",
-		"/C/Users/Administrator/Desktop/面积计算最终版.lisp"
+		"/E/code/FS150715/Snippet/cond~1.lsp"
 	],
 	"find":
 	{
@@ -1119,7 +1111,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"E:\\Program Files\\Tarch14\\sys18x64",
@@ -1133,6 +1125,39 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"GB_ZW_config",
+			"test_sample.GB_ZW_config",
+			"test_sample",
+			"config",
+			"rt",
+			"config",
+			"replace_words_in_text",
+			"retext",
+			"\\",
+			"text_lst",
+			"make_aline",
+			"text_lst[i]",
+			"(text_lst,i)",
+			"text_lst[i]",
+			"text_lst,i",
+			"def is_",
+			"is_",
+			"s_",
+			"is_",
+			"replace_words_in_text",
+			"replace_word_lst",
+			"        \n",
+			"():",
+			"replace_word_lst",
+			"del_",
+			"del_lst",
+			"pu",
+			"text",
+			"num",
+			"=",
+			"def is_",
+			"is_",
+			"dic",
 			"\\",
 			"is",
 			"\\.",
@@ -1227,40 +1252,7 @@
 			"tblsearch",
 			"square",
 			"最短边",
-			"最长边",
-			"边长列表",
-			"总长边",
-			"总短边",
-			"周长",
-			"总周长",
-			"面积",
-			"总亩数",
-			"总面积",
-			"print",
-			"square",
-			"cbt",
-			"多段线",
-			"长度",
-			"边",
-			"边长",
-			"长边",
-			"矩形",
-			"10000",
-			"列表",
-			"空列表",
-			"空",
-			"空表",
-			"struct",
-			"lst",
-			"a",
-			"inpt",
-			"s",
-			"only",
-			"in",
-			"first",
-			"fist",
-			"−",
-			"．"
+			"最长边"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1279,84 +1271,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/Administrator/AppData/Local/YNote/Data/sina1697537093/ea466229632646a39a4b8cf545896864/md文档范例.txt",
-					"settings":
-					{
-						"buffer_size": 1419,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1053,
-								1053
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1192.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -1377,11 +1298,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1393,7 +1321,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 194.0
+		"height": 238.0
 	},
 	"replace":
 	{
@@ -1439,7 +1367,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 354.0,
 	"status_bar_visible": true
 }

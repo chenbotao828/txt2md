@@ -43,12 +43,6 @@ def cft_md_table(aline):
     return True if re.match("\|.*\|$",aline["text"]) else False
 def cft_table_info(aline):
     return "none"
-def cft_table(aline):
-    if cft_table_name(aline) :
-        return True
-    elif cft_md_table(aline):
-        return True
-    return False
 def cft_table_grid_info(aline):
     return "none"
 def cft_table_grid(aline):
@@ -110,7 +104,7 @@ def cst_index(lst,i):
                 [info[0]+1],
                 ]:
                 return True
-        else: False
+        return False
     def is_up(lst,i,j):
         if i-j in range(0,len(lst)):
             info=lst[i]["cft_info"]
@@ -120,7 +114,7 @@ def cst_index(lst,i):
                 [info[0],info[1]],
                 ]:
                 return True
-        else: False
+        return False
     if lst[i]["cft"]=="cft_0p0p0":
         if neighbor_is_right(lst,i,50,is_down,is_up):
             return True
@@ -133,7 +127,7 @@ def cst_subtitle(lst,i):
             if lst[i+j]["cft"]=="cft_0p0p0":
                 if info1[:-1]==[info[0],info[1],1]:
                     return True
-        else:  False
+        return False
     def is_up(lst,i,j):
         if i-j in range(0,len(lst)):
             info=lst[i]["cft_info"]
@@ -142,9 +136,9 @@ def cst_subtitle(lst,i):
                 if info1[0]==info[0] and info1[1]==info1[1]-1 :
                     return True
             elif lst[i-j]["cft"]=="cft_0":
-                if info1[0]==info1[0]:
+                if info1[0]==info[0]:
                     return True
-        else:  False
+        return False
     if lst[i]["cft"]=="cft_0p0":
         if neighbor_is_right(lst,i,5,is_down,is_up):
             return True
@@ -157,7 +151,7 @@ def cst_title(lst,i):
             if lst[i+j]["cft"]=="cft_0p0":
                 if info1[:-1]==[info[0],1]:
                     return True
-        else:  False
+        return False
     def is_up(lst,i,j):
         if i-j in range(0,len(lst)):
             info=lst[i]["cft_info"]
@@ -165,24 +159,11 @@ def cst_title(lst,i):
             if lst[i-j]["cft"]=="cft_0p0p0":
                 if info1[0]==info[0]-1 :
                     return True
-        else:  False
+        return False
     if lst[i]["cft"]=="cft_0":
         if neighbor_is_right(lst,i,5,is_down,is_up):
             return True
     return False
-<<<<<<< HEAD
-# def cst_list(lst,i):
-#     def is_down(lst,i,j):
-#         return False
-#     def is_up(lst,i,j):
-#         if i-j in range(0,len(lst)):
-#             if lst[i-j]["text"][-1] =="：":
-
-#     if lst[i]["cft"]=="cft_0":
-#         if neighbor_is_right(lst,i,30,is_down,is_up):
-#             return True
-#     return False
-=======
 def cst_list(lst,i):
     def is_down(lst,i,j):
         return False
@@ -196,7 +177,7 @@ def cst_list(lst,i):
                         if lst[i+k]["cft"]=="cft_0":
                             if info[0]==info1[0]-1:
                                 return True
-                    else:  False
+                    return False
                 def is_up1(lst,i,k):
                     if i-k in range(0,len(lst)):
                         info=lst[i]["cft_info"]
@@ -204,20 +185,60 @@ def cst_list(lst,i):
                         if lst[i-k]["cft"]=="cft_0":
                             if info[0]==info1[0]+1:
                                 return True
-                    else:  False
+                    return False
                 if lst[i]["cft"]=="cft_0":
                     if neighbor_is_right(lst,i,20,is_down1,is_up1):
                         return True
-    return False
->>>>>>> try
-#******************************************************************************
-#其他
-#******************************************************************************
-def con_judge(text_lst,i,con_lst):
-    for con in con_lst:
-        if con(text_lst,i):
+    if lst[i]["cft"]=="cft_0":
+        if neighbor_is_right(lst,i,20,is_down,is_up):
             return True
     return False
+def cst_first_md_table(lst,i):
+    def is_down(lst,i,j):
+        return False
+    def is_up(lst,i,j):
+        if i-j in range(0,len(lst)):
+            if lst[i-j]["cft"]=="cft_table_name":
+                return True
+        return False
+    if lst[i]["cft"]=="cft_md_table":
+        if neighbor_is_right(lst,i,5,is_down,is_up):
+            return True
+    return False
+#******************************************************************************
+# make_md
+#******************************************************************************
+def md_pic(aline):
+    info=aline["cft_info"]
+    return "**" + info[0] + "**" +str(info[1])+info[2]
+def md_empty(aline):
+    return ""
+def md_table_name(aline):
+    info=aline["cft_info"]
+    return "**"+ info[0] + str(info[1]) +"."+ str(info[2]) +"."+ str(info[3])\
+            +"** "+info[4]
+def md_md_table(aline):
+    return aline["text"]
+def md_table_grid(aline):
+    return ""
+def md_table_remarks(aline):
+    info=aline["cft_info"]
+    return "**"+info[0]+"** "+info[1]
+def md_index(aline):
+    info=aline["cft_info"]
+    return "**"+str(info[0])+"."+str(info[1])+"."+str(info[2])+"** "+info[3]
+def md_subtitle(aline):
+    info=aline["cft_info"]
+    return "###"+str(info[0])+"."+str(info[1])+" "+info[2]
+def md_title(aline):
+    info=aline["cft_info"]
+    return "##"+str(info[0])+" "+info[1]
+def md_list(aline):
+    info=aline["cft_info"]
+    return ">**"+str(info[0])+".** "+info[1]
+#******************************************************************************
+# 以下是对aline_lst进行操作的函数
+#******************************************************************************
 def make_aline(raw_text,i):
     return{"num":i,
            "raw_text":raw_text,}
@@ -262,3 +283,39 @@ def add_cst(lst,cst_con_lst):
     for i in range(0,len(lst)):
         lst[i]["cst"]=cst(lst,i,cst_con_lst)
     return lst
+def add_md(lst,md_con_dic):
+    for aline in lst:
+        for con in md_con_dic.keys():
+            if aline["cft"] == con :
+                aline["md"]=eval(md_con_dic[con]+"(aline)")
+            elif aline["cst"]==con:
+                aline["md"]=eval(md_con_dic[con]+"(aline)")
+        if not ("md" in aline.keys()):
+            aline["md"]=aline["text"]
+    return lst
+def con_judge(lst,i,con_lst):
+    for con in con_lst:
+        if con in [lst[i]["cft"],lst[i]["cst"]]:
+            return True
+    return False
+def merge_lst(lst,del_con_lst,merge_con_lst,insert_con_dic):
+    # newlst=[lst[0]["md"]]
+    # for i in range(1,len(lst)):
+    #     if con_judge(lst,i,del_con_lst):
+    #         pass
+    #     else:
+    #         if con_judge(lst,i,merge_con_lst):
+    #             for con in insert_con_dic.keys():
+    #                 if con in [lst[i]["cst"],lst[i]["cft"]]:
+    #                     if insert_con_dic[con][0]!=None:
+    #                         newlst.append(insert_con_dic[con][0])
+    #                     newlst.append(lst[i]["md"])
+    #                     if insert_con_dic[con][1]!=None:
+    #                         newlst.append(insert_con_dic[con][1])
+    #             else:
+    #                 newlst.append(lst[i]["md"])
+    #         else:
+    #             # print (newlst[-1])
+    #             # print (lst[i]["md"])
+    #             newlst[-1]+=lst[i]["md"]
+    # return newlst

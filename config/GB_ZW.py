@@ -33,7 +33,7 @@ replace_word_lst =[
     ('!','\\!'),]
 
 #******************************************************************************
-#cft_con_lst 用于 add_cf_type函数,添加aline["cft_type"]属性,即上下文无关类型
+#cft_con_lst 添加aline["cft"]属性,即上下文无关类型
 #******************************************************************************
 cft_con_lst=[
     "cft_pic",
@@ -47,18 +47,58 @@ cft_con_lst=[
     "cft_0",
     ]
 #******************************************************************************
-#cst_con_lst 用于 add_cf_type函数,添加aline["cft_type"]属性,即上下文无关类型
+#cst_con_lst 添加aline["cst"]属性,即上下文有关类型
 #******************************************************************************
 cst_con_lst=[
     "cst_index",
-    # "cst_subtitle",
+    "cst_subtitle",
     "cst_title",
-    # "cst_list",
+    "cst_list",
+    "cst_first_md_table",
     ]
 
 #******************************************************************************
-#cst_con_lst 用于 add_cf_type函数,添加aline["cft_type"]属性,即上下文无关类型
+#md_con_dic 用于 add_md函数,添加aline["md"]属性,即md格式内容
 #******************************************************************************
-# cft_con_lst=[
-#     is_list
-#     ]
+md_con_dic={
+    "cst_index":"md_index",
+    "cst_subtitle":"md_subtitle",
+    "cst_title":"md_title",
+    "cst_list":"md_list",
+    "cft_pic":"md_pic",
+    "cft_empty":"md_empty",
+    "cft_table_name":"md_table_name",
+    "cft_md_table":"md_md_table",
+    "cft_table_grid":"md_table_grid",
+    "cft_table_remarks":"md_table_remarks",
+    }
+#******************************************************************************
+# del_con_lst 用于 merge_lst 函数,表示删除的内容
+#******************************************************************************
+del_con_lst=[
+    "cft_empty",
+    "cft_table_grid",
+]
+#******************************************************************************
+# merge_con_lst 用于 merge_lst 函数,表示连接的内容
+#******************************************************************************
+merge_con_lst=[
+    "cst_index",
+    "cst_subtitle",
+    "cst_title",
+    "cst_list",
+    "cft_pic",
+    "cft_table_name",
+    "cft_md_table",
+    "cft_table_remarks",
+    ]
+#******************************************************************************
+# insert_con_dic 用于 merge_lst 函数,表示插入的情况和内容
+#******************************************************************************
+insert_con_dic={
+    "cst_index":["",None],
+    "cft_pic":["",None],
+    "cft_table_name":["",None],
+    "cft_table_remarks":["",None],
+    # "cst_first_md_table",[None,""]
+    }

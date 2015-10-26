@@ -82,7 +82,7 @@ def cft_0p0_info(aline):
 def cft_0p0(aline):
     return True if re.match('\d+\.\d+',aline["text"]) else False
 def cft_0_info(aline):
-    ma=re.match('(\d+)(.+)',aline["text"])
+    ma=re.match('(\d+)(.*)',aline["text"])
     return [int(ma.group(1)),ma.group(2)]
 def cft_0(aline):
     return True if re.match('\d+',aline["text"]) else False
@@ -103,7 +103,7 @@ def cst_index(lst,i):
         if i+j in range(0,len(lst)):
             info=lst[i]["cft_info"]
             info1=lst[i+j]["cft_info"]
-            if info1 in [
+            if info1[:-1] in [
                 [info[0],info[1],info[2]+1],
                 [info[0],info[1]],
                 [info[0],info[1]+1],
@@ -115,7 +115,7 @@ def cst_index(lst,i):
         if i-j in range(0,len(lst)):
             info=lst[i]["cft_info"]
             info1=lst[i-j]["cft_info"]
-            if info1 in [
+            if info1[:-1] in [
                 [info[0],info[1],info[2]-1],
                 [info[0],info[1]],
                 ]:
@@ -131,7 +131,7 @@ def cst_subtitle(lst,i):
             info=lst[i]["cft_info"]
             info1=lst[i+j]["cft_info"]
             if lst[i+j]["cft"]=="cft_0p0p0":
-                if info1==[info[0],info[1],1]:
+                if info1[:-1]==[info[0],info[1],1]:
                     return True
         else: False
     def is_up(lst,i,j):
@@ -155,7 +155,7 @@ def cst_title(lst,i):
             info=lst[i]["cft_info"]
             info1=lst[i+j]["cft_info"]
             if lst[i+j]["cft"]=="cft_0p0":
-                if info1==[info[0],1]:
+                if info1[:-1]==[info[0],1]:
                     return True
         else: False
     def is_up(lst,i,j):
@@ -170,17 +170,17 @@ def cst_title(lst,i):
         if neighbor_is_right(lst,i,5,is_down,is_up):
             return True
     return False
-def cst_list(lst,i):
-    def is_down(lst,i,j):
-        return False
-    def is_up(lst,i,j):
-        if i-j in range(0,len(lst)):
-            if lst[i-j]["text"][-1] =="：":
-                
-    if lst[i]["cft"]=="cft_0":
-        if neighbor_is_right(lst,i,30,is_down,is_up):
-            return True 
-    return False
+# def cst_list(lst,i):
+#     def is_down(lst,i,j):
+#         return False
+#     def is_up(lst,i,j):
+#         if i-j in range(0,len(lst)):
+#             if lst[i-j]["text"][-1] =="：":
+
+#     if lst[i]["cft"]=="cft_0":
+#         if neighbor_is_right(lst,i,30,is_down,is_up):
+#             return True
+#     return False
 #******************************************************************************
 #其他
 #******************************************************************************

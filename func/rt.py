@@ -115,7 +115,7 @@ def cst_index(lst,i):
                 ]:
                 return True
         return False
-    if lst[i]["cft"]=="cft_0p0p0":
+    if lst[i]["type"]=="cft_0p0p0":
         if neighbor_is_right(lst,i,50,is_down,is_up):
             return True
     return False
@@ -124,7 +124,7 @@ def cst_subtitle(lst,i):
         if i+j in range(0,len(lst)):
             info=lst[i]["cft_info"]
             info1=lst[i+j]["cft_info"]
-            if lst[i+j]["cft"]=="cft_0p0p0":
+            if lst[i+j]["type"]=="cft_0p0p0":
                 if info1[:-1]==[info[0],info[1],1]:
                     return True
         return False
@@ -132,14 +132,14 @@ def cst_subtitle(lst,i):
         if i-j in range(0,len(lst)):
             info=lst[i]["cft_info"]
             info1=lst[i-j]["cft_info"]
-            if lst[i-j]["cft"]=="cft_0p0p0":
+            if lst[i-j]["type"]=="cft_0p0p0":
                 if info1[0]==info[0] and info1[1]==info1[1]-1 :
                     return True
-            elif lst[i-j]["cft"]=="cft_0":
+            elif lst[i-j]["type"]=="cft_0":
                 if info1[0]==info[0]:
                     return True
         return False
-    if lst[i]["cft"]=="cft_0p0":
+    if lst[i]["type"]=="cft_0p0":
         if neighbor_is_right(lst,i,5,is_down,is_up):
             return True
     return False
@@ -148,7 +148,7 @@ def cst_title(lst,i):
         if i+j in range(0,len(lst)):
             info=lst[i]["cft_info"]
             info1=lst[i+j]["cft_info"]
-            if lst[i+j]["cft"]=="cft_0p0":
+            if lst[i+j]["type"]=="cft_0p0":
                 if info1[:-1]==[info[0],1]:
                     return True
         return False
@@ -156,11 +156,11 @@ def cst_title(lst,i):
         if i-j in range(0,len(lst)):
             info=lst[i]["cft_info"]
             info1=lst[i-j]["cft_info"]
-            if lst[i-j]["cft"]=="cft_0p0p0":
+            if lst[i-j]["type"]=="cft_0p0p0":
                 if info1[0]==info[0]-1 :
                     return True
         return False
-    if lst[i]["cft"]=="cft_0":
+    if lst[i]["type"]=="cft_0":
         if neighbor_is_right(lst,i,5,is_down,is_up):
             return True
     return False
@@ -168,13 +168,13 @@ def cst_list(lst,i):
     def is_down(lst,i,j):
         return False
     def is_up(lst,i,j):
-        if i-j in range(0,len(lst)):
+        if i-j in range(0,len(lst)) and len(lst[i-j]["text"]) > 0:
             if lst[i-j]["text"][-1] =="：":
                 def is_down1(lst,i,k):
                     if i+k in range(0,len(lst)):
                         info=lst[i]["cft_info"]
                         info1=lst[i+k]["cft_info"]
-                        if lst[i+k]["cft"]=="cft_0":
+                        if lst[i+k]["type"]=="cft_0":
                             if info[0]==info1[0]-1:
                                 return True
                     return False
@@ -182,14 +182,14 @@ def cst_list(lst,i):
                     if i-k in range(0,len(lst)):
                         info=lst[i]["cft_info"]
                         info1=lst[i-k]["cft_info"]
-                        if lst[i-k]["cft"]=="cft_0":
+                        if lst[i-k]["type"]=="cft_0":
                             if info[0]==info1[0]+1:
                                 return True
                     return False
-                if lst[i]["cft"]=="cft_0":
+                if lst[i]["type"]=="cft_0":
                     if neighbor_is_right(lst,i,20,is_down1,is_up1):
                         return True
-    if lst[i]["cft"]=="cft_0":
+    if lst[i]["type"]=="cft_0":
         if neighbor_is_right(lst,i,20,is_down,is_up):
             return True
     return False
@@ -198,11 +198,11 @@ def cst_first_md_table(lst,i):
         return False
     def is_up(lst,i,j):
         if i-j in range(0,len(lst)):
-            if lst[i-j]["cft"]=="cft_table_name":
+            if lst[i-j]["type"]=="cft_table_name":
                 return True
         return False
-    if lst[i]["cft"]=="cft_md_table":
-        if neighbor_is_right(lst,i,5,is_down,is_up):
+    if lst[i]["type"]=="cft_md_table":
+        if neighbor_is_right(lst,i,2,is_down,is_up):
             return True
     return False
 #******************************************************************************
@@ -237,6 +237,19 @@ def md_list(aline):
     info=aline["cft_info"]
     return ">**"+str(info[0])+".** "+info[1]
 #******************************************************************************
+# 在lst中插入,lst,i->lst
+#******************************************************************************
+def insert_empty(lst,i):
+    return [{"md":"","type":"md_empty"},lst[i]]
+def insert_first_md_table(lst,i):
+    return [
+            {"md":"","type":"md_empty"},
+            lst[i],
+            {"md":"|" + ":-:|" * (lst[i]["md"].count("|")-1),
+             "type":"md_table_head"},
+            ]
+            
+#******************************************************************************
 # 以下是对aline_lst进行操作的函数
 #******************************************************************************
 def make_aline(raw_text,i):
@@ -266,11 +279,11 @@ def add_cft(lst,cft_con_lst):
         return "default"
     #content free type
     for aline in lst:
-       aline["cft"]=cft(aline,cft_con_lst)
+       aline["type"]=cft(aline,cft_con_lst)
     return lst
 def add_cft_info(lst):
     for aline in lst:
-        con = aline["cft"]
+        con = aline["type"]
         aline["cft_info"]= eval(con+"_info(aline)")
     return lst
 def add_cst(lst,cst_con_lst):
@@ -278,44 +291,49 @@ def add_cst(lst,cst_con_lst):
         for con in cst_con_lst:
             if eval(con+"(lst,i)"):
                 return con
-        return "none"
+        return lst[i]["type"]
     #content sensitive type
     for i in range(0,len(lst)):
-        lst[i]["cst"]=cst(lst,i,cst_con_lst)
+        lst[i]["type"]=cst(lst,i,cst_con_lst)
     return lst
 def add_md(lst,md_con_dic):
     for aline in lst:
         for con in md_con_dic.keys():
-            if aline["cft"] == con :
-                aline["md"]=eval(md_con_dic[con]+"(aline)")
-            elif aline["cst"]==con:
+            if aline["type"] == con :
                 aline["md"]=eval(md_con_dic[con]+"(aline)")
         if not ("md" in aline.keys()):
             aline["md"]=aline["text"]
     return lst
 def con_judge(lst,i,con_lst):
-    for con in con_lst:
-        if con in [lst[i]["cft"],lst[i]["cst"]]:
-            return True
+    aline=lst[i]
+    if "type" in aline.keys():
+        for con in con_lst:
+            if con==aline["type"]:
+                return True
     return False
-def merge_lst(lst,del_con_lst,merge_con_lst,insert_con_dic):
-    # newlst=[lst[0]["md"]]
-    # for i in range(1,len(lst)):
-    #     if con_judge(lst,i,del_con_lst):
-    #         pass
-    #     else:
-    #         if con_judge(lst,i,merge_con_lst):
-    #             for con in insert_con_dic.keys():
-    #                 if con in [lst[i]["cst"],lst[i]["cft"]]:
-    #                     if insert_con_dic[con][0]!=None:
-    #                         newlst.append(insert_con_dic[con][0])
-    #                     newlst.append(lst[i]["md"])
-    #                     if insert_con_dic[con][1]!=None:
-    #                         newlst.append(insert_con_dic[con][1])
-    #             else:
-    #                 newlst.append(lst[i]["md"])
-    #         else:
-    #             # print (newlst[-1])
-    #             # print (lst[i]["md"])
-    #             newlst[-1]+=lst[i]["md"]
-    # return newlst
+def del_lst(lst,del_con_lst):
+    newlst=[]
+    for i in range(0,len(lst)):
+        if con_judge(lst,i,del_con_lst):
+            pass
+        else:
+            newlst.append(lst[i])
+    return newlst
+def insert_lst(lst,insert_con_dic):
+    newlst=[lst[0]]
+    for i in range(1,len(lst)):
+        if con_judge(lst,i,insert_con_dic.keys()):
+            for con in insert_con_dic.keys():
+                if con ==lst[i]["type"]:
+                    newlst+=eval(insert_con_dic[con]+"(lst,i)")
+        else:
+            newlst.append(lst[i])
+    return newlst
+def merge_lst(lst,merge_con_lst):
+    newlst=[lst[0]]
+    for i in range(1,len(lst)):
+        if con_judge(lst,i,merge_con_lst):
+            newlst.append(lst[i])
+        else:
+            newlst[-1]["md"]+=lst[i]["md"]
+    return newlst

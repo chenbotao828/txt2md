@@ -190,7 +190,7 @@ def cst_list(lst,i):
                     if neighbor_is_right(lst,i,20,is_down1,is_up1):
                         return True
     if lst[i]["type"]=="cft_0":
-        if neighbor_is_right(lst,i,50,is_down,is_up):
+        if neighbor_is_right(lst,i,20,is_down,is_up):
             return True
     return False
 def cst_first_md_table(lst,i):
@@ -218,7 +218,7 @@ def md_table_name(aline):
     return "**"+ info[0] + str(info[1]) +"."+ str(info[2]) +"."+ str(info[3])\
             +"** "+info[4]
 def md_md_table(aline):
-    return aline["text"]
+    return aline["text"][1:-1]
 def md_table_grid(aline):
     return ""
 def md_table_remarks(aline):
@@ -240,12 +240,13 @@ def md_list(aline):
 # 在lst中插入,lst,i->lst
 #******************************************************************************
 def insert_empty(lst,i):
-    return [{"md":"","type":"md_empty"},lst[i]]
+    return [{"md":"","type":"cft_empty"},lst[i]]
 def insert_first_md_table(lst,i):
     return [
-            {"md":"","type":"md_empty"},
+            {"md":"","type":"cft_empty"},
+            {"md":"","type":"cft_empty"},
             lst[i],
-            {"md":"|" + ":-:|" * (lst[i]["md"].count("|")-1),
+            {"md":(":-:|" * (lst[i]["md"].count("|")+1))[:-1],
              "type":"md_table_head"},
             ]
             

@@ -9,6 +9,7 @@ replace_word_lst =[
 #correction_replace_lst
     ("mz" , "㎡"),
     ("m2" , "㎡"),
+    ("m3" , "m³"),
     (":" , "："),
     ("／", "/"),
     ("(" , "（"),
@@ -69,6 +70,7 @@ md_con_dic={
     "cft_pic":"md_pic",
     "cft_empty":"md_empty",
     "cft_table_name":"md_table_name",
+    "cst_first_md_table":"md_md_table",
     "cft_md_table":"md_md_table",
     "cft_table_grid":"md_table_grid",
     "cft_table_remarks":"md_table_remarks",
@@ -87,18 +89,21 @@ del_con_lst=[
 insert_con_dic={
     "cst_first_md_table":"insert_first_md_table",
     "cst_index":"insert_empty",
+    "cst_subtitle":"insert_empty",
+    "cst_title":"insert_empty",
     "cft_pic":"insert_empty",
     "cft_table_name":"insert_empty",
     "cft_table_remarks":"insert_empty",
+    "cst_list":"insert_empty",
     }
 #******************************************************************************
 # merge_con_lst 用于 merge_lst 函数,表示连接的内容
 #******************************************************************************
 merge_con_lst=[
+    "cft_empty",
     "cft_table_remarks",
     "cft_table_name",
     "cft_md_table",
-    "md_empty",
     "md_table_head",
     "cst_index",
     "cst_subtitle",

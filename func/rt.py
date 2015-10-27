@@ -182,7 +182,7 @@ def cst_list(lst,i):
                     if i-k in range(0,len(lst)):
                         info=lst[i]["cft_info"]
                         info1=lst[i-k]["cft_info"]
-                        if lst[i-k]["type"]=="cft_0":
+                        if lst[i-k]["type"]=="cst_list":
                             if info[0]==info1[0]+1:
                                 return True
                     return False
@@ -190,7 +190,7 @@ def cst_list(lst,i):
                     if neighbor_is_right(lst,i,20,is_down1,is_up1):
                         return True
     if lst[i]["type"]=="cft_0":
-        if neighbor_is_right(lst,i,20,is_down,is_up):
+        if neighbor_is_right(lst,i,50,is_down,is_up):
             return True
     return False
 def cst_first_md_table(lst,i):
@@ -210,7 +210,7 @@ def cst_first_md_table(lst,i):
 #******************************************************************************
 def md_pic(aline):
     info=aline["cft_info"]
-    return "**" + info[0] + "**" +str(info[1])+info[2]
+    return "**" + info[0] +str(info[1])+ "** " +info[2]
 def md_empty(aline):
     return ""
 def md_table_name(aline):

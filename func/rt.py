@@ -8,26 +8,26 @@ def default_info(aline):
 def cft_content_start_info(aline):
     return  "none"
 def cft_content_start(aline):
-    return True if aline["text"]=="目录"or"目次" else False
+    return True if aline["text"]=="目次" else False
 def cft_content_title_info(aline):
-    ma=re.match('(\d+)(\w)+[．….]+',aline["text"])
+    ma=re.match('(\d+)([^0-9|^．|^…|^\.]+)+[．…\.]+',aline["text"])
     return [int(ma.group(1)),ma.group(2)]
 def cft_content_title(aline):
-    return True if re.match('\d+\w+[．….]+',aline["text"]) else False
+    return True if re.match('\d+[^0-9|^．|^…|^\.]+[．…\.]+',aline["text"]) else False
 def cft_content_subtitle_info(aline):
-    ma=re.match('(\d+)\.(\d+)(\w+)[．….]+',aline["text"])
+    ma=re.match('(\d+)\.(\d+)([^0-9|^．|^…|^\.]+)[．…\.]+',aline["text"])
     return [int(ma.group(1)),int(ma.group(2)),ma.group(3)]
 def cft_content_subtitle(aline):
-    return True if re.match('\d+\.\d+\w+[．….]+',aline["text"]) else False
+    return True if re.match('\d+\.\d+[^0-9|^．|^…|^\.]+[．…\.]+',aline["text"]) else False
 def cft_content_else_info(aline):
-    return "none"
+    return [re.match('([^0-9|^．|^…|^\.]+)[．…\.]+',aline["text"]).group(1)]
 def cft_content_else(aline):
-    return True if re.match('\w+[．….]+',aline["text"]) else False
+    return True if re.match('[^0-9|^．|^…|^\.]+[．…\.]+',aline["text"]) else False
 def cft_pic_info(aline):
-    ma= re.match('图(\d+)(\w*)',aline["text"])
+    ma= re.match('图(\d+)([^0-9]*)',aline["text"])
     return ["图",int(ma.group(1)),ma.group(2)]
 def cft_pic(aline):
-    return True if re.match('图\d+\w*',aline["text"]) else False
+    return True if re.match('图\d+[^0-9]*',aline["text"]) else False
 def cft_empty_info(aline):
     return "none"
 def cft_empty(aline):
@@ -236,6 +236,16 @@ def md_title(aline):
 def md_list(aline):
     info=aline["cft_info"]
     return ">**"+str(info[0])+".** "+info[1]
+def md_content_start(aline):
+    return "##"+aline["text"]
+def md_content_title(aline):
+    info=aline["cft_info"]
+    return "###"+str(info[0])+" "+info[1]
+def md_content_subtitle(aline):
+    info=aline["cft_info"]
+    return "**"+str(info[0])+"."+str(info[1])+"** "+info[2]
+def md_content_else(aline):
+    return "####"+aline["cft_info"][0]
 #******************************************************************************
 # 在lst中插入,lst,i->lst
 #******************************************************************************
@@ -249,7 +259,14 @@ def insert_first_md_table(lst,i):
             {"md":(":-:|" * (lst[i]["md"].count("|")+1))[:-1],
              "type":"md_table_head"},
             ]
-            
+def insert_separator(lst,i):
+        return [
+            {"md":"","type":"cft_empty"},
+            {"md":"---",
+             "type":"md_separator"},
+            lst[i],
+            {"md":"","type":"cft_empty"},
+            ]
 #******************************************************************************
 # 以下是对aline_lst进行操作的函数
 #******************************************************************************

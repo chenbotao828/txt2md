@@ -1,20 +1,27 @@
 # -*- coding: utf-8 -*-
-import func.rt , config.GB_ML
+import func.rt 
+
 txt_list=[
-"C:\\Users\\Administrator\\Documents\\GitHub\\txt2md\\test_sample\\目次.txt",
+"C:\\Users\\Administrator\\Documents\\GitHub\\txt2md\\test_sample\\术语.txt",
+]
+doc_type="GB_SY"
+
+do_list=[
+    ("replace_aline_lst","replace_word_lst"),
+    ("add_cft","cft_con_lst"),
+    ("add_cft_info","cft_info_dic"),
+    ("add_cst","cst_con_lst"),
+    ("add_md","md_con_dic"),
+    ("del_lst","del_con_lst"),
+    ("insert_lst","insert_con_dic"),
+    ("merge_lst","merge_con_lst"),
 ]
 
-
+exec("import config."+doc_type)
 for txt in txt_list:
     lst=func.rt.file_to_aline_lst(txt)
-    lst=func.rt.replace_aline_lst(lst,config.GB_ML.replace_word_lst)
-    lst=func.rt.add_cft(lst,config.GB_ML.cft_con_lst)
-    lst=func.rt.add_cft_info(lst)
-    lst=func.rt.add_cst(lst,config.GB_ML.cst_con_lst)
-    lst=func.rt.add_md(lst,config.GB_ML.md_con_dic)
-    lst=func.rt.del_lst(lst,config.GB_ML.del_con_lst)
-    lst=func.rt.insert_lst(lst,config.GB_ML.insert_con_dic)
-    lst=func.rt.merge_lst(lst,config.GB_ML.merge_con_lst)
+    for do in do_list:
+        exec("lst=func.rt."+do[0]+"(lst,config."+doc_type+"."+do[1]+")")
 
     f=open(txt[:-3]+"md",'w',encoding='utf16')
     for aline in lst:

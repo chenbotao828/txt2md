@@ -3,48 +3,24 @@ import re
 #******************************************************************************
 #对 aline["text"] 进行上下文无关的判定,返回 True 或者 False
 #******************************************************************************
-def default_info(aline):
-    return "none"
-def cft_content_start_info(aline):
-    return  "none"
+def cft_normal_section(aline):
+    return True if aline["text"][0:5]=="    " else False
 def cft_content_start(aline):
-    return True if aline["text"]=="目次" else False
-def cft_content_title_info(aline):
-    ma=re.match('(\d+)([^0-9|^．|^…|^\.]+)+[．…\.]+',aline["text"])
-    return [int(ma.group(1)),ma.group(2)]
+    return True if aline["text"] in ["前言" ,"目次"] else False
 def cft_content_title(aline):
     return True if re.match('\d+[^0-9|^．|^…|^\.]+[．…\.]+',aline["text"]) else False
-def cft_content_subtitle_info(aline):
-    ma=re.match('(\d+)\.(\d+)([^0-9|^．|^…|^\.]+)[．…\.]+',aline["text"])
-    return [int(ma.group(1)),int(ma.group(2)),ma.group(3)]
 def cft_content_subtitle(aline):
     return True if re.match('\d+\.\d+[^0-9|^．|^…|^\.]+[．…\.]+',aline["text"]) else False
-def cft_content_else_info(aline):
-    return [re.match('([^0-9|^．|^…|^\.]+)[．…\.]+',aline["text"]).group(1)]
 def cft_content_else(aline):
     return True if re.match('[^0-9|^．|^…|^\.]+[．…\.]+',aline["text"]) else False
-def cft_pic_info(aline):
-    ma= re.match('图(\d+)([^0-9]*)',aline["text"])
-    return ["图",int(ma.group(1)),ma.group(2)]
 def cft_pic(aline):
     return True if re.match('图\d+[^0-9]*',aline["text"]) else False
-def cft_empty_info(aline):
-    return "none"
 def cft_empty(aline):
     return True if aline["text"] == "" else False
-def cft_table_name_info(aline):
-    ma = re.match("表(\d+)\.(\d+)\.(\d+)(.*)",aline["text"])
-    return ["表",int(ma.group(1)),int(ma.group(2)),int(ma.group(3)),ma.group(4)]
 def cft_table_name(aline):
     return True if re.match("表\d+\.\d+\.\d+",aline["text"]) else False
-def cft_md_table_info(aline):
-    return "none"
 def cft_md_table(aline):
     return True if re.match("\|.*\|$",aline["text"]) else False
-def cft_table_info(aline):
-    return "none"
-def cft_table_grid_info(aline):
-    return "none"
 def cft_table_grid(aline):
     a= re.match('┏[━┳]*┓',aline["text"])
     b= re.match('┣[━╋]*┫',aline["text"])
@@ -53,33 +29,54 @@ def cft_table_grid(aline):
         return True
     else:
         False
-def cft_table_remarks_info(aline):
-    return ["注:",re.match("注：(.*)",aline["text"]).group(1)]
 def cft_table_remarks(aline):
     return True if re.match("注：.*",aline["text"]) else False
-def cft_page_info(aline):
-    return [int(re.match('(\d+)',aline["text"]).group(1)),]
 def cft_page(aline):
     if re.match('\d+',aline["text"]):
         if aline["text"] == re.match('\d+',aline["text"]).group():
             return True
     else:
         return False
+def cft_0p0p0(aline):
+    return True if re.match('\d+\.\d+\.\d+',aline["text"]) else False
+def cft_0p0(aline):
+    return True if re.match('\d+\.\d+',aline["text"]) else False
+def cft_0(aline):
+    return True if re.match('\d+',aline["text"]) else False
+
+#******************************************************************************
+# 添加 aline["cft_info"]
+#******************************************************************************
+def default_info(aline):
+    return "none"
+def cft_content_title_info(aline):
+    ma=re.match('(\d+)([^0-9|^．|^…|^\.]+)+[．…\.]+',aline["text"])
+    return [int(ma.group(1)),ma.group(2)]
+def cft_content_subtitle_info(aline):
+    ma=re.match('(\d+)\.(\d+)([^0-9|^．|^…|^\.]+)[．…\.]+',aline["text"])
+    return [int(ma.group(1)),int(ma.group(2)),ma.group(3)]
+def cft_content_else_info(aline):
+    return [re.match('([^0-9|^．|^…|^\.]+)[．…\.]+',aline["text"]).group(1)]
+def cft_pic_info(aline):
+    ma= re.match('图(\d+)([^0-9]*)',aline["text"])
+    return ["图",int(ma.group(1)),ma.group(2)]
+def cft_table_name_info(aline):
+    ma = re.match("表(\d+)\.(\d+)\.(\d+)(.*)",aline["text"])
+    return ["表",int(ma.group(1)),int(ma.group(2)),int(ma.group(3)),ma.group(4)]
+def cft_table_remarks_info(aline):
+    return ["注:",re.match("注：(.*)",aline["text"]).group(1)]
+def cft_page_info(aline):
+    return [int(re.match('(\d+)',aline["text"]).group(1)),]
 def cft_0p0p0_info(aline):
     ma=re.match('(\d+)\.(\d+)\.(\d+)(.*)',aline["text"])
     return [int(ma.group(1)),int(ma.group(2)),int(ma.group(3)),ma.group(4)]
-def cft_0p0p0(aline):
-    return True if re.match('\d+\.\d+\.\d+',aline["text"]) else False
 def cft_0p0_info(aline):
     ma=re.match('(\d+)\.(\d+)(.*)',aline["text"])
     return [int(ma.group(1)),int(ma.group(2)),ma.group(3)]
-def cft_0p0(aline):
-    return True if re.match('\d+\.\d+',aline["text"]) else False
 def cft_0_info(aline):
     ma=re.match('(\d+)(.*)',aline["text"])
     return [int(ma.group(1)),ma.group(2)]
-def cft_0(aline):
-    return True if re.match('\d+',aline["text"]) else False
+
 #******************************************************************************
 #对在aline_lst内的第i项aline["text"] 进行上下文有关的判定,返回 True 或者 False
 #******************************************************************************
@@ -119,6 +116,16 @@ def cst_index(lst,i):
         if neighbor_is_right(lst,i,50,is_down,is_up):
             return True
     return False
+def cst_term(lst,i):
+    if lst[i]["type"]=="cft_0p0p0":
+        if re.match("[^a-zA-Z]+[a-zA-Z- ]+",lst[i]["cft_info"][-1]):
+            return True
+    return False
+def cst_term_content(lst,i):
+    if lst[i]["type"]=="default":
+        if re.match("   ",lst[i]["raw_text"]):
+            return True
+    return False
 def cst_subtitle(lst,i):
     def is_down(lst,i,j):
         if i+j in range(0,len(lst)):
@@ -150,6 +157,9 @@ def cst_title(lst,i):
             info1=lst[i+j]["cft_info"]
             if lst[i+j]["type"]=="cft_0p0":
                 if info1[:-1]==[info[0],1]:
+                    return True
+            elif lst[i+j]["type"]=="cft_0p0p0":
+                if info1[:-1]==[info[0],0,1]:
                     return True
         return False
     def is_up(lst,i,j):
@@ -208,6 +218,8 @@ def cst_first_md_table(lst,i):
 #******************************************************************************
 # make_md
 #******************************************************************************
+def md_normal_section(aline):
+    return "&#160; &#160; &#160; &#160;"+ aline["text"]
 def md_pic(aline):
     info=aline["cft_info"]
     return "**" + info[0] +str(info[1])+ "** " +info[2]
@@ -233,6 +245,16 @@ def md_subtitle(aline):
 def md_title(aline):
     info=aline["cft_info"]
     return "##"+str(info[0])+" "+info[1]
+def md_term(aline):
+    info=aline["cft_info"]
+    raw=aline["raw_text"]
+    ma=re.match("([0-9\. ]+)(\D+)",raw)
+    content_ma=re.match("([^a-zA-Z]+)([a-zA-Z ]+)",ma.group(2))
+    chi_content=content_ma.group(1).strip()
+    eng_content=content_ma.group(2)
+    return "**"+str(info[0])+"."+str(info[1])+"."+str(info[2])+"** "+chi_content+" "+eng_content
+def md_term_content(aline):
+    return ">"+aline["text"]
 def md_list(aline):
     info=aline["cft_info"]
     return ">**"+str(info[0])+".** "+info[1]
@@ -299,10 +321,14 @@ def add_cft(lst,cft_con_lst):
     for aline in lst:
        aline["type"]=cft(aline,cft_con_lst)
     return lst
-def add_cft_info(lst):
+def add_cft_info(lst,cft_info_dic):
     for aline in lst:
-        con = aline["type"]
-        aline["cft_info"]= eval(con+"_info(aline)")
+        for con in cft_info_dic.keys():
+            if aline["type"]==con:
+                aline["cft_info"]=eval(cft_info_dic[con]+"(aline)")
+                break
+        if "cft_info" not in aline.keys():
+            aline["cft_info"]="none"
     return lst
 def add_cst(lst,cst_con_lst):
     def cst(lst,i,cst_con_lst):

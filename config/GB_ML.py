@@ -46,6 +46,15 @@ cft_con_lst=[
     "cft_page",
     ]
 #******************************************************************************
+#cft_info_dic 添加aline["cft_info"]属性
+#******************************************************************************
+cft_info_dic={
+    "cft_content_title":"cft_content_title_info",
+    "cft_content_subtitle":"cft_content_subtitle_info",
+    "cft_content_else":"cft_content_else_info",
+    "cft_page":"cft_page_info",
+}
+#******************************************************************************
 #cst_con_lst 添加aline["cst"]属性,即上下文有关类型
 #******************************************************************************
 cst_con_lst=[

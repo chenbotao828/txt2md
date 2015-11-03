@@ -284,9 +284,9 @@ def insert_first_md_table(lst,i):
 def insert_separator(lst,i):
         return [
             {"md":"","type":"cft_empty"},
+            lst[i],
             {"md":"---",
              "type":"md_separator"},
-            lst[i],
             {"md":"","type":"cft_empty"},
             ]
 #******************************************************************************

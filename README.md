@@ -1,4 +1,4 @@
-# TXT2MD(中文)
+# TXT2MD(中文/[ENG](https://github.com/chenbotao828/txt2md#txt2mdenglish))
 
 这是一个 Python 3 的脚本,将TXT文件,根据文本内容转换为Markdown格式.
 

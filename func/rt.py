@@ -96,10 +96,9 @@ def cst_index(lst,i):
             info1=lst[i+j]["cft_info"]
             if info1[:-1] in [
                 [info[0],info[1],info[2]+1],
-                [info[0],info[1]],
                 [info[0],info[1]+1],
                 [info[0]+1],
-                ]:
+                ] or info1[:-2] == [info[0],info[1]]:
                 return True
         return False
     def is_up(lst,i,j):
@@ -249,7 +248,7 @@ def md_term(aline):
     info=aline["cft_info"]
     raw=aline["raw_text"]
     ma=re.match("([0-9\. ]+)(\D+)",raw)
-    content_ma=re.match("([^a-zA-Z]+)([a-zA-Z ]+)",ma.group(2))
+    content_ma=re.match("([^a-zA-Z]+)([a-zA-Z- ]+)",ma.group(2))
     chi_content=content_ma.group(1).strip()
     eng_content=content_ma.group(2)
     return "**"+str(info[0])+"."+str(info[1])+"."+str(info[2])+"** "+chi_content+" "+eng_content

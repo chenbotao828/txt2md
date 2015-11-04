@@ -66,6 +66,7 @@ cft_info_dic={
 #cst_con_lst 添加aline["cst"]属性,即上下文有关类型
 #******************************************************************************
 cst_con_lst=[
+    "cst_more_index",
     "cst_index",
     "cst_subtitle",
     "cst_title",
@@ -77,6 +78,7 @@ cst_con_lst=[
 #md_con_dic 用于 add_md函数,添加aline["md"]属性,即md格式内容
 #******************************************************************************
 md_con_dic={
+    "cst_more_index":"md_more_index",
     "cst_index":"md_index",
     "cst_subtitle":"md_subtitle",
     "cst_title":"md_title",
@@ -102,6 +104,7 @@ del_con_lst=[
 #******************************************************************************
 insert_con_dic={
     "cst_first_md_table":"insert_first_md_table",
+    "cst_more_index":"insert_empty",
     "cst_index":"insert_empty",
     "cst_subtitle":"insert_empty",
     "cst_title":"insert_empty",
@@ -119,6 +122,7 @@ merge_con_lst=[
     "cft_table_name",
     "cft_md_table",
     "md_table_head",
+    "cst_more_index",
     "cst_index",
     "cst_subtitle",
     "cst_title",

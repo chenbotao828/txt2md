@@ -115,6 +115,33 @@ def cst_index(lst,i):
         if neighbor_is_right(lst,i,50,is_down,is_up):
             return True
     return False
+def cst_more_index(lst,i):
+    def is_down(lst,i,j):
+        if i+j in range(0,len(lst)):
+            info=lst[i]["cft_info"]
+            info1=lst[i+j]["cft_info"]
+            if info1[:-1] in [
+                [info[0],info[1],info[2]+1],
+                [info[0],info[1]+1],
+                [info[0]+1],
+                ] or info1[:-2] == [info[0],info[1]]:
+                return True
+        return False
+    def is_up(lst,i,j):
+        if i-j in range(0,len(lst)):
+            info=lst[i]["cft_info"]
+            info1=lst[i-j]["cft_info"]
+            if info1[:-1] in [
+                [info[0],info[1],info[2]-1],
+                [info[0],info[1]],
+                ]:
+                return True
+        return False
+    if lst[i]["type"]=="cft_0p0p0":
+        if neighbor_is_right(lst,i,50,is_down,is_up):
+            if re.match("\d+\.\d+\.\d+[-~、～]\d+\.\d+\.\d+", lst[i]["text"]):
+                return True
+    return False
 def cst_term(lst,i):
     if lst[i]["type"]=="cft_0p0p0":
         if re.match("[^a-zA-Z]+[a-zA-Z- ]+",lst[i]["cft_info"][-1]):
@@ -238,6 +265,9 @@ def md_table_remarks(aline):
 def md_index(aline):
     info=aline["cft_info"]
     return "**"+str(info[0])+"."+str(info[1])+"."+str(info[2])+"** "+info[3]
+def md_more_index(aline):
+    ma=re.match("(\d+\.\d+\.\d+[-~、～]\d+\.\d+\.\d+)(\D+)",aline["text"])
+    return "**"+ma.group(1)+"** "+ma.group(2)
 def md_subtitle(aline):
     info=aline["cft_info"]
     return "###"+str(info[0])+"."+str(info[1])+" "+info[2]
